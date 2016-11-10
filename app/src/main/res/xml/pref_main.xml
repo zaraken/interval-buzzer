@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <SwitchPreference
+        android:defaultValue="false"
+        android:title="Activate"
+        android:key="on_off"
+        android:persistent="true" />
+    <EditTextPreference
+        android:defaultValue="30"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="Repeat Interval (in minutes)"
+        android:key="interval"
+        android:dependency="on_off" />
+    <EditTextPreference
+        android:defaultValue="10, 10, 10, 10000"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="Buzz Pattern"
+        android:key="buzz_interval"
+        android:dependency="on_off" />
+</PreferenceScreen>
